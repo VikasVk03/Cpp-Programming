@@ -1,0 +1,22 @@
+# ---- C++ compiled output ----
+*.o
+*.out
+*.exe
+*.a
+*.so
+
+# ---- Common executable names ----
+a.out
+
+# ---- Debug files ----
+*.gdb
+*.dSYM/
+
+# ---- Build directories ----
+build/
+cmake-build-*/
+
+# ---- Editor / OS noise ----
+.idea/
+*~
+.DS_Store
