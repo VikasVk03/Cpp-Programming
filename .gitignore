@@ -1,4 +1,5 @@
 # ---- C++ compiled output ----
+bin/
 *.o
 *.out
 *.exe
