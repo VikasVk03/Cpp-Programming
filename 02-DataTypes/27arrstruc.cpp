@@ -41,3 +41,19 @@ int main()
 
     return 0;
 }
+
+/*
+ -> Learn about Union (no example code given in book)
+
+ -> chatgpt link:
+ https://chatgpt.com/share/69466a2b-da08-8009-8dac-e6714cbd32d5
+
+*/
+
+/*
+-> Learn about Enumeration (no example code given in book)
+
+-> chatgpt link:
+https://chatgpt.com/share/6946739f-20cc-8009-b82e-738e53771363
+
+*/
