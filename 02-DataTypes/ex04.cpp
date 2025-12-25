@@ -49,9 +49,9 @@ int main()
     int remaining_sec_after_hrs = remaining_sec_after_day % SEC_IN_HRS;
 
     int No_of_Min = remaining_sec_after_hrs / SEC_IN_MIN;
-    int remain_sec_after_min = remaining_sec_after_hrs % SEC_IN_MIN;
+    int final_sec_after_min = remaining_sec_after_hrs % SEC_IN_MIN;
 
-    cout << Totalseconds << " Seconds = " << No_Of_Day << " Days " << No_of_Hrs << " Hrs " << No_of_Min << " Min " << remain_sec_after_min << " seconds" << endl;
+    cout << Totalseconds << " Seconds = " << No_Of_Day << " Days " << No_of_Hrs << " Hrs " << No_of_Min << " Min " << final_sec_after_min << " seconds" << endl;
 
     // cout << 31600000 / (60 * 60 * 24) << endl;
     // cout << 31600000 % (60 * 60 * 24) << endl;
