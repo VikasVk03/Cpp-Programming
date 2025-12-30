@@ -1,5 +1,8 @@
-// The End-of-file condition  -- read from book and personal chatgpt
+/*
+The End-of-file condition  -- read from book and personal chatgpt
+https : // chatgpt.com/share/6953cdca-6ef0-8009-8eb1-262b013170cb
 
+*/
 //  textin3.cpp  -- reading chars to end of file.
 #include <iostream>
 
