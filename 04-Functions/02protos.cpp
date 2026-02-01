@@ -2,6 +2,13 @@
 
 // protos.cpp  -- using prototypes and function calls
 
+/*
+
+-> C++ does places a restriction on what types you can use for a return value. The return value cannot be an array.
+    Everything else is possible -- integers, floating-point numbers, pointers and even structures and objects.
+
+*/
+
 #include <iostream> // #include makes labrary function prototype available in file.
 
 void cheers(int);      // prototype: no return value
