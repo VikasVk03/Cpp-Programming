@@ -3,7 +3,7 @@
 /*
 An array declaration should indicate three things.
 
--> the type fo value to be stored in each element
+-> the type of value to be stored in each element
 -> the name of the array
 -> the number of elements in the array
 

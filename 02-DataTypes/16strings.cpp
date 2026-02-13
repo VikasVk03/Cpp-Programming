@@ -6,7 +6,8 @@ A string is series of characters stored in consecutive bytes of memory.
 -> C++ has two ways of dealing with strings
 
 
-1} -> c-style
+1} -> c-style - means text is stored as character of array and terminated by null character(\0) end of text
+
 The idea of series of characters stored in consecutive bytes implies that you can store a string in an array of char, with each character kept in its own array element.
 
 string provide convenient way to store text information, such as message to the user.
@@ -26,13 +27,13 @@ int main()
 {
     using namespace std;
 
-    // c-style
+    -> c-style
     char dog[8] = {'b', 'e', 'a', 'u', 'x', ' ', 'I', 'I'}; // not a string
 
     char cat[8] = {'f', 'a', 't', 'e', 's', 's', 'a', '\0'}; // a string
 
-    // using string constant ("text") or string literal
-    // Quoted strings always include the terminating null character (\0) implicitly
+    -> using string constant ("text") or string literal
+    -> Quoted strings always include the terminating null character (\0) implicitly
     char bird[11] = "Mr. Cheeps"; // the \0 is understood
     char fish[] = "Bubbles";      // let the compiler count
 
@@ -44,8 +45,8 @@ int main()
     cout << "fish = " << fish << endl;
     cout << "Boss = " << boss << endl;
 
-    // -> Concatenate sting literal - to combine two quoted strings into one.
-    // any tow string constants separated only by whitespace(spaces, tabs, and newlines) are automatically joined into one.
+     -> Concatenate sting literal - to combine two quoted strings into one.
+     any tow string constants separated only by whitespace(spaces, tabs, and newlines) are automatically joined into one.
 
     cout << "I'd give my right arm to be"
     " a great violinist.\n";
