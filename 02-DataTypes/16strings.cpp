@@ -59,6 +59,52 @@ int main()
 
 */
 
+/*
+ 2} The String class - Using std::string
+ it handles memory management dynamically and provides a rich set of built-in functions.
+
+ -> Key Concepts:
+       - Header: To use std::string, you must include the <string> header file.
+       - Namespace: It is part of the std namespace (e.g., std::string or using using namespace std;).
+       - Memory Management: Unlike character arrays, std::string objects can automatically grow and shrink as needed, reducing the risk of buffer overflows.
+
+*/
+
+/*
+#include <iostream>
+#include <string>
+
+int main() {
+    -> Declaration and Initialization
+    std::string str1 = "Hello";
+    std::string str2("World");
+    std::string str3; // Declares an empty string
+
+    ->  Assignment
+    str3 = str1; // str3 now holds "Hello"
+
+    ->  Concatenation
+    std::string full_string = str1 + " " + str2 + "!"; // full_string holds "Hello World!"
+    str1.append(" there"); // str1 becomes "Hello there"
+
+    ->  Input/Output
+    std::cout << "Enter a line of text: ";
+    std::getline(std::cin, str3); // Reads a full line of text, including spaces
+    std::cout << "You entered: " << str3 << std::endl;
+
+    ->  Accessing characters
+    char first_char = full_string[0]; // Accesses the character at index 0, which is 'H'
+    char last_char = full_string.back(); // Accesses the last character
+
+    -> Length
+    int len = full_string.length(); // Returns the number of characters, which is 12 (including space and '!')
+
+    return 0;
+}
+
+
+*/
+
 // strings.cpp -- storing strings in an array
 
 #include <iostream>
