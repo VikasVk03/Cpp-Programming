@@ -12,7 +12,10 @@ struct variableName
 {
     statement1;
     statement2;   // structure members .. can be access in similar way as to array
-};
+}var1, var2;
+
+} var1, var2;
+After closing brace, you can directly create structure variables.
 
 -> for example. suppose that Blotaire,Inc. wants to create a type to describe members of its product line of designer inflatable.
 In particular, the type should hold the name of the item, its volume in cubic feet and its selling price.
