@@ -1,0 +1,58 @@
+// arrfun2.cpp  -- functions with an array argument
+
+/*
+
+*****************
+- If you pass an ordinary variable the function, the function works with copy. But if you pass an array, the function works with the original.
+
+- The design decision to use array address as arguments saves the time and memory needed to copy an entire
+array. the overhead for using copies can be prohibitive if you're working with large arrays. with copies,
+not only does a program need more computer memory, but it has to spend time copying large blocks of data.
+
+- working with the original data raises the possibility of inadvertent data corruption.
+
+*****************
+
+*/
+
+#include <iostream>
+
+const int ArSize = 8;
+
+int sum_arr(int arr[], int n);
+
+int main()
+{
+    int cookies[ArSize] = {1, 2, 4, 8, 16, 32, 64, 128};
+
+    std::cout << cookies << " = array address, ";
+
+    std::cout << sizeof cookies << " = sizeof cookies\n";
+
+    int sum = sum_arr(cookies, ArSize);
+
+    std::cout << "Total cookies eaten: " << sum << std::endl;
+    sum = sum_arr(cookies, 3);
+    std::cout << "First three eaters ate " << sum << " cookies\n";
+    sum = sum_arr(cookies + 4, 4);
+    std::cout << "Last four eaters ate " << sum << " cookies.\n";
+
+    return 0;
+}
+
+// return the sum of an integer array
+
+int sum_arr(int arr[], int n)
+{
+    int total = 0;
+    std::cout << arr << " = arr, ";
+
+    std::cout << sizeof arr << " = sizeof arr\n";
+
+    for (int i = 0; i < n; i++)
+    {
+        total = total + arr[i];
+    }
+
+    return total;
+}
