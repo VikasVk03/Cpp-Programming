@@ -14,6 +14,16 @@
 void cheers(int);      // prototype: no return value
 double cube(double x); // prototype: return a double
 
+/* “In C++, the compiler only translates code. The operating system’s runtime startup code calls main(), and from main() the program flow is controlled.”
+
+    -> In C, the startup function is often _start
+
+    -> _start calls main()
+
+    -> After main() returns, _exit() is called
+
+*/
+
 int main() // main() is called by the runtime system (via OS startup code), and main() calls the functions defined inside it.
 {
     using namespace std;
