@@ -1,24 +1,22 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "build cpp",
-            "type": "shell",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-std=c++17",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": [
-                "$gcc"
-            ]
-        }
-    ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build cpp",
+      "type": "shell",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-std=c++17",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/../bin/${fileBasenameNoExtension}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
 }
